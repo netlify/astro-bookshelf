@@ -17,7 +17,10 @@ Astro.response.headers.set(
   "public, max-age=0, must-revalidate"
 );
 Astro.response.headers.set("netlify-cdn-cache-control", "s-maxage=31536000");
-Astro.response.headers.set("netlify-cache-tag", book.sys.id);
+Astro.response.headers.set(
+  "netlify-cache-tag",
+  [slug, book.author.sys.id].join(",")
+);
 ---
 
 <Layout title={book.title}>
