@@ -1,0 +1,22 @@
+{
+  "name": "astro-bookshelf",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro check && astro build",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "setup": "cd ./bin && npm install && cd .. && node ./bin/setup.js",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/netlify": "^3.1.1",
+    "@astrojs/tailwind": "^5.0.0",
+    "@contentful/rich-text-html-renderer": "^16.1.2",
+    "astro": "^3.1.1",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.4.5"
+  }
+}
